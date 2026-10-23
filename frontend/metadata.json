@@ -1,0 +1,7 @@
+{
+  "name": "Creator Compass - Social Media & Music Growth OS",
+  "description": "Das all-in-one interaktive System für Content Creator, Musiker & Marken. Maßgeschneiderte Strategien, Multi-Plattform-Post-Generatoren, Thumbnail Studio, Voice Teleprompter, Deal Simulator und KI-Unterstützung.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

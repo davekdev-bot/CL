@@ -1,0 +1,22 @@
+{
+  "name": "creator-compass-social-media-music-growth-os-api-backend-server",
+  "type": "module",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Local backend for secure server-side Gemini and OpenAI API calls; legacy Vertex proxy optional",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env.local server.js",
+    "dev": "nodemon --env-file=.env.local server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "google-auth-library": "^10.5.0",
+    "express-rate-limit": "^7.5.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "nodemon": "^3.1.11"
+  }
+}

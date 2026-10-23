@@ -1,0 +1,32 @@
+CREATOR VAULT — INTEGRATION STEPS
+
+1. Copy CreatorVaultWorld.tsx into:
+   frontend/components/CreatorVaultWorld.tsx
+
+2. In frontend/App.tsx add this import:
+   import { CreatorVaultWorld } from './components/CreatorVaultWorld';
+
+3. Find the current branch:
+   {activeTab === 'creator_desk' && (
+     <CreatorDeskTab
+       profile={profile}
+       onNavigateTab={setActiveTab}
+       onOpenUniversalNavigator={() => setIsNavigatorOpen(true)}
+       onUpdateProfile={handleUpdateProfile}
+     />
+   )}
+
+   Replace it with:
+   {activeTab === 'creator_desk' && (
+     <CreatorVaultWorld
+       onNavigateTab={setActiveTab}
+       onOpenNavigator={() => setIsNavigatorOpen(true)}
+     />
+   )}
+
+4. The CreatorDeskTab import can then be removed from App.tsx if unused.
+   Keep Navbar.tsx, geminiService.ts, and backend configuration unchanged.
+
+The new central view has four clickable rooms: Musikstudio, Videostudio,
+Büro, and Bibliothek & Analyse. Each room links to existing TabKey modules.
+Tailwind classes and lucide-react icons are used, matching the project's current stack.

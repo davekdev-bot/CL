@@ -1,16 +1,20 @@
-CREATOR VAULT — PREMIUM INTERACTIVE UPDATE
+CREATOR VAULT — SPATIAL ROOM UPDATE
 
-Dateien im Paket:
+Included:
 - frontend/App.tsx
 - frontend/components/CreatorVaultWorld.tsx
-- public/wallpapers/creator-vault-premium.png (fotorealistischer Premium-Büro-Hintergrund)
+- public/wallpapers/README.txt
 
-Installation:
-1. Sichere deine vorhandene frontend/App.tsx.
-2. Kopiere die enthaltene frontend/App.tsx in dein Projekt und ersetze die vorhandene Datei.
-3. Kopiere frontend/components/CreatorVaultWorld.tsx in den gleichnamigen Ordner deines Projekts.
-4. Kopiere public/wallpapers/creator-vault-premium.png in public/wallpapers/.
-5. Starte npm run dev.
+Install:
+1. Back up your current frontend/App.tsx.
+2. Copy the included frontend/App.tsx into your project, replacing the current file.
+3. Copy CreatorVaultWorld.tsx into frontend/components/.
+4. Optional: create public/wallpapers/ and add your own room wallpapers using these exact names:
+   music-studio.jpg
+   video-studio.jpg
+   office.jpg
+   library.jpg
+   Recommended: wide 16:9 images, 1920x1080 or larger, JPG/WebP, no text baked into the image.
+5. Run npm run dev.
 
-Die vier Räume und ihre Werkzeugkarten navigieren zu vorhandenen Modulen. Gemini und das Backend werden in diesem Paket nicht geändert.
-Hinweis: Vor dem Einsatz bitte im lokalen Projekt kompilieren/testen; das Paket wurde hier nicht in der vollständigen lokalen Projektumgebung ausgeführt.
+If you do not add wallpapers, the room gradients remain as fallback. The Gemini service and backend are not changed.
